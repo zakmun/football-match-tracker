@@ -1,1 +1,1 @@
-# football-match-tracker
+Track football matches played with friends such as teams, scores, date played, leaderboard etc
