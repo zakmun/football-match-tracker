@@ -1,5 +1,7 @@
 const btn = document.querySelector('.btn')
+const selector = document.querySelector('#players')
 
 btn.addEventListener('click', function () {
-    console.log('i work')
+    const playerOptions = selector.value
+    console.log(playerOptions)
 })
