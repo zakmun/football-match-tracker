@@ -8,9 +8,13 @@ btn.addEventListener('click', function () {
      const teamOne = document.createTextNode('Team 1')
      h3.appendChild(teamOne)
      container.appendChild(h3)
+
      for (let i = 0; i < playerOptions; i++) {
-        const playerInput = document.createElement('input')
-        container.appendChild(playerInput)
+        const teamOneContainer = document.createElement('div')
+        const teamOneInput = document.createElement('input')
+        teamOneContainer.appendChild(teamOneInput)
+        container.appendChild(teamOneContainer)
+
      }
 
 })
