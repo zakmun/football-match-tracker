@@ -23,3 +23,9 @@ select {
     font-size: 20px;
     text-align: center;
 }
+
+button {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+}
