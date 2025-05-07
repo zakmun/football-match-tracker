@@ -4,6 +4,7 @@ const container = document.querySelector('.container')
 
 btn.addEventListener('click', function () {
      const playerOptions = selector.value
+    
      const h3 = document.createElement('h3')
      const teamOne = document.createTextNode('Team 1')
      h3.appendChild(teamOne)
@@ -20,6 +21,10 @@ btn.addEventListener('click', function () {
 
      if (!document.querySelector('.teamTwoContainer')) {
        
+        const h3TeamTwo = document.createElement('h3')
+        const teamTwo = document.createTextNode('Team Two')
+        h3TeamTwo.appendChild(teamTwo)
+        container.appendChild(h3TeamTwo)
     
      }
 
