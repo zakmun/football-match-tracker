@@ -11,12 +11,15 @@ btn.addEventListener('click', function () {
 
      for (let i = 0; i < playerOptions; i++) {
         const teamOneContainer = document.createElement('div')
+        teamOneContainer.classList.add('teamOneContainer')
         const teamOneInput = document.createElement('input')
         teamOneContainer.appendChild(teamOneInput)
         container.appendChild(teamOneContainer)
 
      }
 
+     
+
 })
 
-// if button is clicked then display 2 team input fields
+// if container == "" print team1 input fields, otherwise print team2 input fields
