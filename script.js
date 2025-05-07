@@ -18,11 +18,13 @@ btn.addEventListener('click', function () {
 
      }
 
+     if (!document.querySelector('.teamTwoContainer')) {
      const teamTwoContainer = document.createElement('div')
      teamTwoContainer.classList.add('teamTwoContainer')
      const teamTwoInput = document.createElement('input')
      teamTwoContainer.appendChild(teamTwoInput)
      container.appendChild(teamTwoContainer)
+     }
 
 })
 
