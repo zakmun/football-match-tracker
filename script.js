@@ -4,6 +4,7 @@ const container = document.querySelector('.container')
 
 btn.addEventListener('click', function () {
      const playerOptions = selector.value
+     
     
      const h3teamOne = document.createElement('h3')
      const teamOne = document.createTextNode('Team 1')
@@ -14,6 +15,7 @@ btn.addEventListener('click', function () {
         const teamOneContainer = document.createElement('div')
         teamOneContainer.classList.add('teamOneContainer')
         const teamOneInput = document.createElement('input')
+        teamOneInput.required
         teamOneContainer.appendChild(teamOneInput)
         container.appendChild(teamOneContainer)
 
@@ -32,6 +34,7 @@ btn.addEventListener('click', function () {
         const teamTwoContainer = document.createElement('div')
         teamTwoContainer.classList.add('teamTwoContainer')
         const teamTwoInput = document.createElement('input')
+        teamTwoInput.required
         teamTwoContainer.appendChild(teamTwoInput)
         container.appendChild(teamTwoContainer)
 
