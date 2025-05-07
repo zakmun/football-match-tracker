@@ -18,7 +18,8 @@ btn.addEventListener('click', function () {
 
      }
 
-     
+     const teamTwoContainer = document.createElement('div')
+     teamTwoContainer.classList.add('teamTwoContainer')
 
 })
 
