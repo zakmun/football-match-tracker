@@ -20,6 +20,9 @@ btn.addEventListener('click', function () {
 
      const teamTwoContainer = document.createElement('div')
      teamTwoContainer.classList.add('teamTwoContainer')
+     const teamTwoInput = document.createElement('input')
+     teamTwoContainer.appendChild(teamTwoInput)
+     container.appendChild(teamTwoContainer)
 
 })
 
