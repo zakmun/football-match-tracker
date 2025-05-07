@@ -5,10 +5,10 @@ const container = document.querySelector('.container')
 btn.addEventListener('click', function () {
      const playerOptions = selector.value
     
-     const h3 = document.createElement('h3')
+     const h3teamOne = document.createElement('h3')
      const teamOne = document.createTextNode('Team 1')
-     h3.appendChild(teamOne)
-     container.appendChild(h3)
+     h3teamOne.appendChild(teamOne)
+     container.appendChild(h3teamOne)
 
      for (let i = 0; i < playerOptions; i++) {
         const teamOneContainer = document.createElement('div')
@@ -39,4 +39,3 @@ btn.addEventListener('click', function () {
 
 })
 
-// if container == "" print team1 input fields, otherwise print team2 input fields
