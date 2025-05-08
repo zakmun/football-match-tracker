@@ -18,6 +18,7 @@ Selectbtn.addEventListener('click', function () {
             const teamOneContainer = document.createElement('div')
             teamOneContainer.classList.add('teamOneContainer')
             const teamOneInput = document.createElement('input')
+            teamOneInput.classList.add('teamOneInput')
             teamOneInput.required
             teamOneContainer.appendChild(teamOneInput)
             container.appendChild(teamOneContainer)
@@ -36,6 +37,7 @@ Selectbtn.addEventListener('click', function () {
             const teamTwoContainer = document.createElement('div')
             teamTwoContainer.classList.add('teamTwoContainer')
             const teamTwoInput = document.createElement('input')
+            teamTwoInput.classList.add('teamTwoInput')
             teamTwoInput.required
             teamTwoContainer.appendChild(teamTwoInput)
             container.appendChild(teamTwoContainer)
