@@ -40,5 +40,15 @@ btn.addEventListener('click', function () {
 
      }
 
+     if ((document.querySelector('.teamOneContainer')) && (document.querySelector('.teamTwoContainer')) ) {
+        const submitBtn = document.createElement('button')
+        submitBtn.classList.add('submitBtn')
+        const submitBtnTxt = document.createTextNode('Submit') 
+        submitBtn.appendChild(submitBtnTxt)
+        container.appendChild(submitBtn)
+     }
+
 })
+
+// If main container has teamonecontainer and teamtwocontainer, display submit button
 
