@@ -2,14 +2,14 @@ const Selectbtn = document.querySelector('.btn')
 const selector = document.querySelector('#players')
 const container = document.querySelector('.container')
 
-numberOfPlayers = playerOptions;
+let numberOfPlayers;
 
 Selectbtn.addEventListener('click', function () {
      const playerOptions = selector.value
 
      if ((!document.querySelector('.teamOneContainer')) && (!document.querySelector('.teamTwoContainer')) ) {
 
-        if (!document.querySelector('.teamOneInput') || !document.querySelector('.teamTwoInput') ) {
+        
 
             const h3teamOne = document.createElement('h3')
             const teamOne = document.createTextNode('Team 1')
@@ -60,7 +60,7 @@ Selectbtn.addEventListener('click', function () {
          }
          
 
-        }
+    
 
    
      
@@ -68,6 +68,7 @@ Selectbtn.addEventListener('click', function () {
 
 })
 
-// if user selects another playeroption while container is full with team1 and team2 then run the code
-// if playersOptions !== team1input or team2input then
+// if playerOptions !== numberofplayers
+// numberofplayers == playerOptions
+// run the code
 
