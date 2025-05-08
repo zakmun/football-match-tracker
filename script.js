@@ -1,12 +1,13 @@
-const btn = document.querySelector('.btn')
+const Selectbtn = document.querySelector('.btn')
 const selector = document.querySelector('#players')
 const container = document.querySelector('.container')
 
-btn.addEventListener('click', function () {
+Selectbtn.addEventListener('click', function () {
      const playerOptions = selector.value
-     
-    
-     const h3teamOne = document.createElement('h3')
+
+     if ((!document.querySelector('.teamOneContainer')) && (!document.querySelector('.teamTwoContainer')) ) {
+
+        const h3teamOne = document.createElement('h3')
      const teamOne = document.createTextNode('Team 1')
      h3teamOne.appendChild(teamOne)
      container.appendChild(h3teamOne)
@@ -22,7 +23,6 @@ btn.addEventListener('click', function () {
      }
 
      if (!document.querySelector('.teamTwoContainer')) {
-       
         const h3TeamTwo = document.createElement('h3')
         const teamTwo = document.createTextNode('Team Two')
         h3TeamTwo.appendChild(teamTwo)
@@ -41,7 +41,7 @@ btn.addEventListener('click', function () {
      }
 
      if ((!document.querySelector('.submitBtn'))) {
-        
+
         if ((document.querySelector('.teamOneContainer')) && (document.querySelector('.teamTwoContainer')) ) {
             const submitBtn = document.createElement('button')
             submitBtn.classList.add('submitBtn')
@@ -51,9 +51,13 @@ btn.addEventListener('click', function () {
          }
 
      }
+     }
+     
+    
+     
 
 
 })
 
-// If main container has teamonecontainer and teamtwocontainer, display submit button
+// if both team containers are inside of main container and user presses select button again then 
 
