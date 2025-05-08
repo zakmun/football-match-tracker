@@ -1,4 +1,4 @@
-const Selectbtn = document.querySelector('.btn')
+const selectbtn = document.querySelector('.btn')
 const selector = document.querySelector('#players')
 const container = document.querySelector('.container')
 
@@ -67,8 +67,4 @@ Selectbtn.addEventListener('click', function () {
         }
 
 })
-
-// if playerOptions !== numberofplayers
-// numberofplayers == playerOptions
-// run the code
 
