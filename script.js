@@ -2,12 +2,14 @@ const Selectbtn = document.querySelector('.btn')
 const selector = document.querySelector('#players')
 const container = document.querySelector('.container')
 
+numberOfPlayers = playerOptions;
+
 Selectbtn.addEventListener('click', function () {
      const playerOptions = selector.value
 
      if ((!document.querySelector('.teamOneContainer')) && (!document.querySelector('.teamTwoContainer')) ) {
 
-        if (playerOptions !== teamOneInput || playerOptions !== teamTwoInput) {
+        if (!document.querySelector('.teamOneInput') || !document.querySelector('.teamTwoInput') ) {
 
             const h3teamOne = document.createElement('h3')
             const teamOne = document.createTextNode('Team 1')
