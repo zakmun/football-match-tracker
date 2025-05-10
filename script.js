@@ -21,7 +21,7 @@ selectbtn.addEventListener('click', function () {
             teamOneContainer.classList.add('teamOneContainer')
             const teamOneInput = document.createElement('input')
             teamOneInput.classList.add('teamOneInput')
-            teamOneInput.required
+            teamOneInput.required = true;
             teamOneContainer.appendChild(teamOneInput)
             container.appendChild(teamOneContainer)
     
@@ -40,7 +40,7 @@ selectbtn.addEventListener('click', function () {
             teamTwoContainer.classList.add('teamTwoContainer')
             const teamTwoInput = document.createElement('input')
             teamTwoInput.classList.add('teamTwoInput')
-            teamTwoInput.required
+            teamTwoInput.required = true;
             teamTwoContainer.appendChild(teamTwoInput)
             container.appendChild(teamTwoContainer)
     
