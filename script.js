@@ -11,7 +11,7 @@ selectbtn.addEventListener('click', function () {
          
 
             const h3teamOne = document.createElement('h3')
-            const teamOne = document.createTextNode('Team 1')
+            h3TeamTwo.createTextNode('Team 1')
             container.appendChild(h3teamOne)
     
          for (let i = 0; i < playerOptions; i++) {
