@@ -5,14 +5,13 @@ const container = document.querySelector('.container')
 selectbtn.addEventListener('click', function () {
      const playerOptions = selector.value
 
-            if (playerOptions !== numberOfPlayers) {
-                  document.querySelectorAll('.teamOneInput, .teamTwoInput, .teamOneContainer, .teamTwoContainer').forEach(element => element.remove())
+      if (playerOptions !== numberOfPlayers) {
+         document.querySelectorAll('.teamOneInput, .teamTwoInput, .teamOneContainer, .teamTwoContainer').forEach(element => element.remove())
 
          
-
-            const h3teamOne = document.createElement('h3')
-            h3TeamTwo.createTextNode('Team 1')
-            container.appendChild(h3teamOne)
+            const h3TeamOne = document.createElement('h3')
+            h3TeamOne.createTextNode('Team 1')
+            container.appendChild(h3TeamOne)
     
          for (let i = 0; i < playerOptions; i++) {
             const teamOneContainer = document.createElement('div')
