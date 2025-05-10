@@ -2,10 +2,10 @@ const selectbtn = document.querySelector('.btn')
 const selector = document.querySelector('#players')
 const container = document.querySelector('.container')
 
-let numberOfPlayers = selector.value;
+let numberOfPlayers = Number(selector.value);
 
 selectbtn.addEventListener('click', function () {
-     const playerOptions = selector.value
+     const playerOptions = Number(selector.value)
 
       if (playerOptions !== numberOfPlayers) {
          document.querySelectorAll('input, .teamOneContainer, .teamTwoContainer, h3, .submitBtn').forEach(element => element.remove())
