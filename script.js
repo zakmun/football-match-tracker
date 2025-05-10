@@ -42,10 +42,10 @@ selectbtn.addEventListener('click', function () {
          }
     
     
-                const submitBtn = document.createElement('button')
-                submitBtn.classList.add('submitBtn')
-                submitBtn.textContent = 'Submit';
-                container.appendChild(submitBtn)
+            const submitBtn = document.createElement('button')
+            submitBtn.classList.add('submitBtn')
+            submitBtn.textContent = 'Submit';
+            container.appendChild(submitBtn)
          
                 
           currentPlayerCount = selectedPlayerCount
