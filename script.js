@@ -2,8 +2,6 @@ const selectbtn = document.querySelector('.btn')
 const selector = document.querySelector('#players')
 const container = document.querySelector('.container')
 
-let numberOfPlayers = selector.value;
-
 selectbtn.addEventListener('click', function () {
      const playerOptions = selector.value
 
