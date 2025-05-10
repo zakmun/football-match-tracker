@@ -7,12 +7,10 @@ let numberOfPlayers = selector.value;
 selectbtn.addEventListener('click', function () {
      const playerOptions = selector.value
 
-     if ((!document.querySelector('.teamOneContainer')) && (!document.querySelector('.teamTwoContainer')) ) {
-
             if (playerOptions !== numberOfPlayers) {
+                  document.querySelectorAll('.teamOneInput, .teamTwoInput, .teamOneContainer, .teamTwoContainer').forEach(element => element.remove())
 
-            document.querySelectorAll('.teamOneInput, .teamTwoInput').forEach(element => element.remove())
-        
+         
 
             const h3teamOne = document.createElement('h3')
             const teamOne = document.createTextNode('Team 1')
@@ -60,11 +58,11 @@ selectbtn.addEventListener('click', function () {
              }
     
          }
-         }
          
-    
-         numberOfPlayers = playerOptions
+          numberOfPlayers = playerOptions
         }
-
+      }
+      
+    
 })
 
