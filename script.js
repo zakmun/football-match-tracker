@@ -25,13 +25,9 @@ selectbtn.addEventListener('click', function () {
     
          }
     
-         if (!document.querySelector('.teamTwoContainer')) {
             const h3TeamTwo = document.createElement('h3')
-            const teamTwo = document.createTextNode('Team Two')
-            h3TeamTwo.appendChild(teamTwo)
+            h3TeamTwo.createTextNode('Team Two')
             container.appendChild(h3TeamTwo)
-        
-         }
     
          for (let i = 0; i < playerOptions; i++){
             const teamTwoContainer = document.createElement('div')
