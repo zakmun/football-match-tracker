@@ -8,7 +8,7 @@ selectbtn.addEventListener('click', function () {
      const playerOptions = selector.value
 
       if (playerOptions !== numberOfPlayers) {
-         document.querySelectorAll('.teamOneInput, .teamTwoInput, .teamOneContainer, .teamTwoContainer').forEach(element => element.remove())
+         document.querySelectorAll('input, .teamOneContainer, .teamTwoContainer, h3, .submitBtn').forEach(element => element.remove())
 
          
             const h3TeamOne = document.createElement('h3')
