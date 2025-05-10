@@ -43,8 +43,7 @@ selectbtn.addEventListener('click', function () {
     
                 const submitBtn = document.createElement('button')
                 submitBtn.classList.add('submitBtn')
-                const submitBtnTxt = document.createTextNode('Submit') 
-                submitBtn.appendChild(submitBtnTxt)
+                submitBtn.createTextNode('Submit') 
                 container.appendChild(submitBtn)
          
           numberOfPlayers = playerOptions
