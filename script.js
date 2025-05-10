@@ -2,12 +2,12 @@ const selectbtn = document.querySelector('.btn')
 const selector = document.querySelector('#players')
 const container = document.querySelector('.container')
 
-let numberOfPlayers = Number(selector.value);
+let currentPlayerCount = Number(selector.value);
 
 selectbtn.addEventListener('click', function () {
-     const playerOptions = Number(selector.value)
+     const selectedPlayerCount = Number(selector.value)
 
-      if (playerOptions !== numberOfPlayers) {
+      if (selectedPlayerCount !== currentPlayerCount) {
          document.querySelectorAll('input, .teamOneContainer, .teamTwoContainer, h3, .submitBtn').forEach(element => element.remove())
 
          
@@ -15,7 +15,7 @@ selectbtn.addEventListener('click', function () {
             h3TeamOne.textContent = 'Team 1'
             container.appendChild(h3TeamOne)
     
-         for (let i = 0; i < playerOptions; i++) {
+         for (let i = 0; i < selectedPlayerCount; i++) {
             const teamOneContainer = document.createElement('div')
             teamOneContainer.classList.add('teamOneContainer')
             const teamOneInput = document.createElement('input')
@@ -30,7 +30,7 @@ selectbtn.addEventListener('click', function () {
             h3TeamTwo.textContent = 'Team Two' 
             container.appendChild(h3TeamTwo)
     
-         for (let i = 0; i < playerOptions; i++){
+         for (let i = 0; i < selectedPlayerCount; i++){
             const teamTwoContainer = document.createElement('div')
             teamTwoContainer.classList.add('teamTwoContainer')
             const teamTwoInput = document.createElement('input')
@@ -48,7 +48,7 @@ selectbtn.addEventListener('click', function () {
                 container.appendChild(submitBtn)
          
                 
-          numberOfPlayers = playerOptions
+          currentPlayerCount = selectedPlayerCount
         
       }
       
