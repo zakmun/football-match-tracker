@@ -12,7 +12,7 @@ selectbtn.addEventListener('click', function () {
 
          
             const h3TeamOne = document.createElement('h3')
-            h3TeamOne.createTextNode('Team 1')
+            h3TeamOne.textContent = 'Team 1'
             container.appendChild(h3TeamOne)
     
          for (let i = 0; i < playerOptions; i++) {
@@ -27,7 +27,7 @@ selectbtn.addEventListener('click', function () {
          }
     
             const h3TeamTwo = document.createElement('h3')
-            h3TeamTwo.createTextNode('Team Two')
+            h3TeamTwo.textContent = 'Team Two' 
             container.appendChild(h3TeamTwo)
     
          for (let i = 0; i < playerOptions; i++){
@@ -44,9 +44,10 @@ selectbtn.addEventListener('click', function () {
     
                 const submitBtn = document.createElement('button')
                 submitBtn.classList.add('submitBtn')
-                submitBtn.createTextNode('Submit') 
+                submitBtn.textContent = 'Submit';
                 container.appendChild(submitBtn)
          
+                
           numberOfPlayers = playerOptions
         
       }
