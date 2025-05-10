@@ -4,7 +4,7 @@ const container = document.querySelector('.container')
 
 let numberOfPlayers = selector.value;
 
-Selectbtn.addEventListener('click', function () {
+selectbtn.addEventListener('click', function () {
      const playerOptions = selector.value
 
      if ((!document.querySelector('.teamOneContainer')) && (!document.querySelector('.teamTwoContainer')) ) {
